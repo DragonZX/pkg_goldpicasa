@@ -16,8 +16,6 @@ require_once JPATH_COMPONENT.'/helpers/goldfeed.php';
 
 class GoldpicasaController extends JController
 {
-
-
 	/**
 	 * Found or not
 	 * @var bool
@@ -43,7 +41,6 @@ class GoldpicasaController extends JController
 
 		$this->getSubMenu();
 	}
-
 
 	/**
 	 * SUBMENU
@@ -75,8 +72,6 @@ class GoldpicasaController extends JController
 			);
 
 	}
-
-
 
 	/**
 	 * Display
@@ -120,8 +115,6 @@ class GoldpicasaController extends JController
 		return $this;
 	}
 
-
-
 	/**
 	 * Add new or override a existing one
 	 */
@@ -150,7 +143,6 @@ class GoldpicasaController extends JController
 
 	}
 
-
 	/**
 	 * For debug only
 	 */
@@ -160,11 +152,8 @@ class GoldpicasaController extends JController
 		return FALSE;
 	}
 
-
 	/**
 	 * USERS public task
-	 *
-	 *
 	 */
 	public function users() {
 		
@@ -212,7 +201,6 @@ class GoldpicasaController extends JController
 		$xml = JPATH_COMPONENT . '/goldpicasa.xml';
 		$x = simplexml_load_file($xml);
 		$version = (string) $x->version;
-		$domain = (string) $x->goldDomain;
 
         echo '<table><tr><td valign="top" style="width: 500px;">';
 
@@ -220,7 +208,6 @@ class GoldpicasaController extends JController
 		echo '<div style="margin-left:15px;">';
 		echo '<h3>Homepage: <a href="http://goldpicasagallery.konopelski.info" target="_blank">goldpicasagallery.konopelski.info</a></h3>';
 		echo '<h3>Extension version: '.$version.'</h3>';
-		echo '<h3>Registered domain: <a href="http://'.$domain.'" target="_blank">'.$domain.'</a></h3>';
 		
 		if (isset( $x->goldTrial )) {
 			echo '<h3>Trial end: <a>'. ( (string) $x->goldTrial ) .'</a></h3>';
@@ -259,8 +246,6 @@ class GoldpicasaController extends JController
         echo '</td></tr></table>';
 	
 	}
-	
-	
 
 	public function albumselect() {
 		//index.php?option=com_goldpicasa&task=albumselect&tmpl=component
@@ -303,8 +288,6 @@ class GoldpicasaController extends JController
 		$xml = JPATH_COMPONENT . '/goldpicasa.xml';
 		$x = simplexml_load_file($xml);
 		$list['goldVersion'] = (string) $x->version;
-		$list['goldDomain'] = (string) $x->goldDomain;
-		$list['host']=$_SERVER['HTTP_HOST'];
 		$list['type']=1;
 		if (isset($x->goldTrial)) {
 			$list['goldTrial']=(string) $x->goldTrial;
@@ -313,11 +296,8 @@ class GoldpicasaController extends JController
 			$list['goldOrder']=(string) $x->goldOrder;
 		}
 		$list = base64_encode(json_encode($list) );
-		if ($_SERVER['HTTP_HOST']==='j25.lan') {
-			$url = 'http://j25.lan';
-		} else {
-			$url = 'http://' . $this->aurl;
-		}
+		$url = 'http://' . $this->aurl;
+
 		echo '<br /><br /><img src="'.$url.'/installs/logo.gif?gpg='. $list .'" alt="" />';
 
         $this->setConfig(array('frun'=>2));
@@ -366,9 +346,6 @@ class GoldpicasaController extends JController
 
     /**
      * Gold Pisaca Config 2014
-     *
-     *
-     *
      * @param $data
      * @return bool
      */
