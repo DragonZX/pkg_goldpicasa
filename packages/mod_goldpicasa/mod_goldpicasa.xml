@@ -6,7 +6,7 @@
 	<creationDate>January 2017</creationDate>
 	<copyright>Copyright (c) 2017 AUnited Co Ltd, See Copyright.md</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt	</license>
-	<url>http://goldpicasagallery.konopelski.info</url>
+	<authorUrl>http://goldpicasagallery.konopelski.info</authorUrl>
 	<authorEmail>tom@konopelski.info</authorEmail>
 	<authorUrl>www.konopelski.info</authorUrl>
 	<version>4.0</version>
@@ -28,35 +28,20 @@
         <language tag="pl-PL">language/pl-PL.mod_goldpicasa.ini</language>
         <language tag="ru-RU">language/ru-RU.mod_goldpicasa.ini</language>
     </languages>
-
 	<config>
 		<fields name="params">
-		
-			<fieldset name="basicAlbum"
-				addfieldpath="/administrator/components/com_goldpicasa/models/fields"
-				label="Gold Picasa Gallery">
-				
-				<field name="goldGalleryAlbumId" type="modal_gold"
-					label="MOD_GOLDPICASA_SELECT_ALBUM" />
-					
-					
-
+			<fieldset name="basicAlbum"	addfieldpath="/administrator/components/com_goldpicasa/models/fields" label="Gold Picasa Gallery">
+				<field name="goldGalleryAlbumId" type="modal_gold" label="MOD_GOLDPICASA_SELECT_ALBUM" />
 				<field name="goldGalleryShowAlbumName" class="btn-group btn-group-yesno" type="radio" default="1" label="MOD_GOLDPICASA_SHOW_ALBUM_NAME" description="MOD_GOLDPICASA_SHOW_ALBUM_NAME_DSCR">
 				  <option value="1">JYES</option>
 				  <option value="0">JNO</option>
 				</field>
-
 				<field name="goldGalleryCustomAlbumName" type="text" default=""
 					label="MOD_GOLDPICASA_CUSTOM_ALBUM_NAME" description="MOD_GOLDPICASA_IGNORED_IF_EMPTY" size="30" />
-
-
 				<field name="goldShowSummary" class="btn-group btn-group-yesno" type="radio" default="1" label="MOD_GOLDPICASA_SHOW_DESCRIPTION" description="MOD_GOLDPICASA_SHOW_DESCRIPTION_DSCR">
 				  <option value="1">JYES</option>
 				  <option value="0">JNO</option>
 				</field>
-
-
-
 				<field name="goldGalleryThumbnailSize" type="list" default="150"
 					label="MOD_GOLDPICASA_THUMBNAIL_SIZE" description="MOD_GOLDPICASA_THUMBNAIL_SIZE_DSCR">
 					<option value="32">32</option>
@@ -73,10 +58,7 @@
                     <option value="320">320</option>
                     <option value="400">400</option>
                     <option value="512">512</option>
-
 				</field>
-
-
 				<field name="goldGalleryImgmax" type="list" default="800"
 					label="MOD_GOLDPICASA_MAX_IMAGE_RESOLUTION" description="MOD_GOLDPICASA_MAX_IMAGE_RESOLUTION_DSCR" >
 					<option value="94">94</option>
@@ -100,37 +82,15 @@
 					<option value="1600">1600</option>
 					<option value="d">MOD_GOLDPICASA_MAX_IMAGE_RESOLUTION_D</option>
 				</field>
-			<!--
-
-			<field name="goldGalleryMaxResults" type="list" default="50"
-					label="MOD_GOLDPICASA_MAX_RESULTS_PER_PAGE" description="MOD_GOLDPICASA_MAX_RESULTS_PER_PAGE_DSCR">
-					<option value="1">1</option>
-					<option value="5">5</option>
-					<option value="10">10</option>
-					<option value="20">20</option>
-					<option value="30">30</option>
-					<option value="40">40</option>
-					<option value="50">50</option>
-					<option value="100">100</option>
-					<option value="200">200</option>
-			</field>
-            -->
             <field name="goldGalleryMaxResults" size="5" type="text" default="20" label="COM_GOLDPICASA_MAX_RESULTS_PER_PAGE" description="COM_GOLDPICASA_MAX_RESULTS_PER_PAGE_DSCR" filter="integer" />
-				
 			<field name="goldGalleryCroped" type="radio" default="c" label="MOD_GOLDPICASA_THUMBNAIL_TYPE" description="MOD_GOLDPICASA_THUMBNAIL_TYPE_DSCR">
 				  <option value="c">MOD_GOLDPICASA_THUMBNAIL_TYPE_CROPED</option>
 				  <option value="u">MOD_GOLDPICASA_THUMBNAIL_TYPE_UNCROPED</option>
 			</field>	
-
-
 			<field name="goldGalleryMarginRight" type="integer" default="5"
 					label="MOD_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN" description="MOD_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN_DSCR" first="0" last="100" step="5" />
-					
-
 			<field name="goldGalleryMarginBottom" type="integer" default="5"
 					label="MOD_GOLDPICASA_THUMBNAIL_BOTTOM_MARGIN" description="MOD_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN_DSCR" first="0" last="100" step="5" />
-					
-			
 			<field name="goldGalleryBorderType" type="list" default="50"
 					label="MOD_GOLDPICASA_IMAGE_BORDER" description="">
 					<option value="0">MOD_GOLDPICASA_NONE</option>
@@ -141,8 +101,7 @@
 					<option value="5">MOD_GOLDPICASA_IMAGE_BORDER_PADDING10</option>
 					<option value="6">MOD_GOLDPICASA_IMAGE_BORDER_PADDING12</option>
 			</field>
-			
-			<field name="goldGalleryBorderColor" type="list" 
+			<field name="goldGalleryBorderColor" type="list"
 					label="MOD_GOLDPICASA_IMAGE_BORDER_COLOR" description="">
 					<option value="#CCCCCC">gainsboro</option>
 					<option value="black">black</option>
@@ -161,8 +120,6 @@
 					<option value="teal">teal</option>
 					<option value="aqua">aqua</option>
 			</field>
-					
-					
 			<field name="goldGalleryBackgroundColor" type="list" default=""
 					label="MOD_GOLDPICASA_IMAGE_BACKGROUND_COLOR" description="">
 					<option value="">MOD_GOLDPICASA_NONE</option>
@@ -183,30 +140,20 @@
 					<option value="teal">teal</option>
 					<option value="aqua">aqua</option>
 			</field>
-
 			<field name="goldGalleryAttachCssFile" type="filelist" label="MOD_GOLDPICASA_ATTACH_CUSOM_CSS" description="MOD_GOLDPICASA_ATTACH_CUSOM_CSS_DSCR" directory="media/media/css" filter="\.css" exclude="" stripext="" />
-			
-			
 			<field name="goldGalleryImageDisplayMethod" type="radio" default="modal" label="MOD_GOLDPICASA_IMAGE_DISPLAY_METHOD" description="">
 				  <option value="modal">MOD_GOLDPICASA_IMAGE_DISPLAY_MODAL</option>
 				  <option value="nomodal">MOD_GOLDPICASA_IMAGE_DISPLAY_NOMODAL</option>
 			</field>
-			
-			
 			<field name="goldGalleryCustomPager" class="btn-group btn-group-yesno" type="radio" default="1" label="MOD_GOLDPICASA_CUSTOM_PAGER" description="">
 				  <option value="1">JYES</option>
 				  <option value="0">JNO</option>
 			</field>
-			
 			<field name="goldGalleryShowPager" class="btn-group btn-group-yesno" type="radio" default="1" label="MOD_GOLDPICASA_SHOW_PAGER" description="">
 				<option value="1">JYES</option>
 				<option value="0">JNO</option>
 	                 </field>
-
-			
 			<field type="spacer" name="myspacerslibox" label="MOD_GOLDPICASA_SLIMBOX_SPACER" />
-			
-			
 			<field name="goldGallerySlimboxOverlayopacity" type="list" default="0.4" label="MOD_GOLDPICASA_SLIMBOX_OVERLAYOPACITY" description="MOD_GOLDPICASA_SLIMBOX_OVERLAYOPACITY_DSCR">
 				  <option value="1">1</option>
 				  <option value="0.8">0.8</option>
@@ -215,7 +162,6 @@
 				  <option value="0.2">0.2</option>
 				  <option value="0">0</option>
 			</field>
-			
 			<field name="goldGallerySlimboxOverlayFadeDuration" type="list" default="400" label="MOD_GOLDPICASA_OVERLAYFADEDURATION" description="MOD_GOLDPICASA_OVERLAYFADEDURATION_DSCR">
 				  <option value="0">0 (disabled)</option>
 				  <option value="200">200</option>
@@ -224,7 +170,6 @@
 				  <option value="800">800</option>
 				  <option value="1000">1000</option>
 			</field>
-			
 			<field name="goldGallerySlimboxResizeDuration" type="list" default="400" label="MOD_GOLDPICASA_RESIZEDURATION" description="MOD_GOLDPICASA_RESIZEDURATION_DSCR">
 				  <option value="0">0 (disabled)</option>
 				  <option value="200">200</option>
@@ -233,8 +178,6 @@
 				  <option value="800">800</option>
 				  <option value="1000">1000</option>
 			</field>
-
-			
 			<field name="goldGallerySlimboxImageFadeDuration" type="list" default="400" label="MOD_GOLDPICASA_IMAGEFADEDURATION" description="MOD_GOLDPICASA_IMAGEFADEDURATION_DSCR">
 				  <option value="0">0 (disabled)</option>
 				  <option value="200">200</option>
@@ -243,10 +186,6 @@
 				  <option value="800">800</option>
 				  <option value="1000">1000</option>
 			</field>
-			
-			
-			
-			
 			<field name="goldGallerySlimboxCaptionAnimationDuration" type="list" default="400" label="MOD_GOLDPICASA_CAPTIONANIMATIONDURATION" description="MOD_GOLDPICASA_CAPTIONANIMATIONDURATION_DSCR">
 				  <option value="0">0 (disabled)</option>
 				  <option value="200">200</option>
@@ -255,40 +194,31 @@
 				  <option value="800">800</option>
 				  <option value="1000">1000</option>
 			</field>
-			
 			<field name="goldGallerySlimboxImageTitle" type="list" default="3" label="MOD_GOLDPICASA_SLIMBOX_SHOW_TITLE" description="MOD_GOLDPICASA_SLIMBOX_SHOW_TITLE_DSCR">
 				  <option value="1">MOD_GOLDPICASA_SLIMBOX_SHOW_TITLE_ALWAYS_SHOW</option>
 				  <option value="2">MOD_GOLDPICASA_SLIMBOX_SHOW_TITLE_NEVER</option>
 				  <option value="3">MOD_GOLDPICASA_SLIMBOX_SHOW_TITLE_HIDE_FILENAME</option>
 			</field>
-			
 			<field name="goldGallerySlimboxImageLink" type="list" default="hide" label="MOD_GOLDPICASA_SLIMBOX_IMAGE_LINK" description="MOD_GOLDPICASA_SLIMBOX_IMAGE_LINK_DSCR">
 				  <option value="current">MOD_GOLDPICASA_SLIMBOX_IMAGE_LINK_CURRENT</option>
 				  <option value="orginal">MOD_GOLDPICASA_SLIMBOX_IMAGE_LINK_ORGINAL</option>
 				  <option value="hide">JHIDE</option>
 			</field>
-			
 			<field name="goldGallerySlimboxAlbumname" type="list" default="hide" label="MOD_GOLDPICASA_SLIMBOX_ALBUMNAME" description="MOD_GOLDPICASA_SLIMBOX_ALBUMNAME_DSCR">
 				  <option value="hide">JHIDE</option>
 				  <option value="show">JSHOW</option>
 			</field>
-			
 			<field name="goldGalleryAutoResize" class="btn-group btn-group-yesno" type="radio" default="1" label="MOD_GOLDPICASA_AUTO_RESIZE" description="MOD_GOLDPICASA_AUTO_RESIZE_DSCR">
                                   <option value="1">JYES</option>
                                   <option value="0">JNO</option>
 			</field>					
-					
-					
-					
-			</fieldset>
+		</fieldset>
 	<fieldset name="componentContent" label="Gold Picasa - Intro/Outro text">
             <field name="goldGalleryIntroText" label ="Intro text" type="editor" filter="raw" />
             <field name="goldGalleryOutroText" label ="Outro text" type="editor" filter="raw" />
 	</fieldset>
-
 		</fields>
 	</config>
-
 	<updateservers>
 		<server type="extension" priority="1" name="mod_goldpicasa"><![CDATA[http://help.aunited.ru/goldpicasa/update/goldpicasa-update.xml]]></server>
 	</updateservers>

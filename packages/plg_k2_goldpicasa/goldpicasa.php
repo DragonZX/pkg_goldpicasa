@@ -14,8 +14,7 @@ defined('_JEXEC') or die('Restricted access');
 JLoader::register('K2Plugin', JPATH_ADMINISTRATOR.DS.'components'.DS.'com_k2'.DS.'lib'.DS.'k2plugin.php');
 
 class plgK2goldpicasa extends K2Plugin {
-	
-	
+
 	var $pluginName 				= 'goldpicasa';
 	var $pluginNameHumanReadable 	= 'Gold Picasa for K2';
 
@@ -24,7 +23,6 @@ class plgK2goldpicasa extends K2Plugin {
 		JPlugin::loadLanguage('com_goldpicasa', JPATH_ADMINISTRATOR);
 		parent::__construct($subject, $params);
 	}
-	
 
 	/**
 	 * Show gallery
@@ -53,10 +51,7 @@ class plgK2goldpicasa extends K2Plugin {
 		return GoldpicasaHelper::renderPlugin($p, $albumAndUser[0]);
 	
 	}
-	
-	
-	
-	
+
 	function onK2BeforeDisplay(&$item, &$params, $limitstart) {
 		if (!isset($item->plugins)) return '';
 		$plugin_array = json_decode( $item->plugins, true );
@@ -74,8 +69,4 @@ class plgK2goldpicasa extends K2Plugin {
 			return $this->showGallery($plugin_array);
 		}
 	}
-	
-	
-	
-	
 }

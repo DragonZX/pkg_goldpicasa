@@ -19,15 +19,13 @@ jimport('joomla.plugin.plugin');
  */
 class plgContentGoldpicasa extends JPlugin
 {
-
 	private $config=array();
 	private static $albumRenderCount=1; 
 	
 	public function __construct(&$subject, $config = array()) {
 		parent::__construct($subject, $config);
 	}
-	
-	
+
 	/**
 	 * Render album universal
 	 * @param array $attribs
@@ -79,13 +77,8 @@ class plgContentGoldpicasa extends JPlugin
 			} else {
 				return GoldpicasaHelper::renderPlugin($p, $albumAndUser[0]);
 			}
-			
 		}
-		
 	}
-	
-
-
 	/**
 	 * AfterTitle HACK :)
 	 * @param unknown_type $context
