@@ -2,16 +2,14 @@
 <!DOCTYPE extension PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://help.aunited.ru/dtd/joomla/2.5/module-install.dtd">
 <extension type="module" version="2.5" client="site" method="upgrade">
 	<name>Gold Picasa Gallery</name>
-	<author>Tom Konopelski</author>
-	<creationDate>May 2013</creationDate>
-	<copyright>Copyright (C) 2013 Tom Konopelski. All rights reserved.
-	</copyright>
-	<license>GNU General Public License version 2 or later; see LICENSE.txt
-	</license>
+	<author>AUnited Co Ltd</author>
+	<creationDate>January 2017</creationDate>
+	<copyright>Copyright (c) 2017 AUnited Co Ltd, See Copyright.md</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt	</license>
 	<url>http://goldpicasagallery.konopelski.info</url>
 	<authorEmail>tom@konopelski.info</authorEmail>
 	<authorUrl>www.konopelski.info</authorUrl>
-	<version>1.3.0</version>
+	<version>4.0</version>
 	<description>Gold Picasa module</description>
 	<files>
 		<filename module="mod_goldpicasa">mod_goldpicasa.php</filename>
@@ -290,4 +288,8 @@
 
 		</fields>
 	</config>
+
+	<updateservers>
+		<server type="extension" priority="1" name="mod_goldpicasa"><![CDATA[http://help.aunited.ru/goldpicasa/update/goldpicasa-update.xml]]></server>
+	</updateservers>
 </extension>

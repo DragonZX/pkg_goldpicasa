@@ -350,8 +350,6 @@ function goldPicasaGetDec(a) {
 goldGalleryDebug = false;
 goldPicasaDo = 'c3VubGlmZS1mbS5jb20=';
 goldPicasaWe = '3.3.4';
-goldPicasaOr = '271';
-goldPicasaGeDa = '2014-11-19 13:19:07';
 var Slimbox = function() {
     function y() {
         var a = n.getScroll(),

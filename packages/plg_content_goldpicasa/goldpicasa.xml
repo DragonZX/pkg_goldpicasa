@@ -3,11 +3,12 @@
 <extension version="1.6" type="plugin" group="content" method="upgrade">
 	<name>plg_content_goldpicasa</name>
 	<author>Tom Konopelski</author>
-	<creationDate>March 2012</creationDate>
+	<creationDate>January 2017</creationDate>
 	<license>GNU General Public License version 3 or later</license>
-	<version>1.2</version>
+	<copyright>Copyright (c) 2017 AUnited Co Ltd, See Copyright.md</copyright>
+	<version>4.0</version>
 	<description>Gold Picasa plugin for articles</description>
-	<authorUrl>www.konopelski.info</authorUrl>
+	<authorUrl>http://aunited.ru</authorUrl>
 	<files>
 		<filename plugin="goldpicasa">goldpicasa.php</filename>
 		<filename>index.html</filename>
@@ -23,4 +24,7 @@
 	<scriptfile>install.php</scriptfile>
 	<config>
 	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="plg_goldpicasa"><![CDATA[http://help.aunited.ru/goldpicasa/update/goldpicasa-update.xml]]></server>
+	</updateservers>
 </extension>

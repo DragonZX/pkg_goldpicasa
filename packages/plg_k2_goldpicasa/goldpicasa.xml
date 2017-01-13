@@ -5,10 +5,10 @@
 	<author>Tom Konopelski</author>
 	<authorEmail>goldpicasagallery@konopelski.info</authorEmail>
 	<authorUrl>www.goldpicasagallery.konopelski.info</authorUrl>
-	<copyright>Copyright (c) 2006-2013 Tom Konopelski Ltd. All rights reserved.</copyright>
-	<creationDate>October, 2013</creationDate>
+	<copyright>Copyright (c) 2017 AUnited Co Ltd, See Copyright.md</copyright>
+	<creationDate>January 2013</creationDate>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<version>2.1</version>
+	<version>4.0</version>
 	<description>Gold Picasa for K2</description>
 	
 	<files>
@@ -248,5 +248,7 @@
 			</field>
          
      </fields>
-
+	<updateservers>
+		<server type="extension" priority="1" name="k2p_goldpicasa"><![CDATA[http://help.aunited.ru/goldpicasa/update/goldpicasa-update.xml]]></server>
+	</updateservers>
 </extension>
