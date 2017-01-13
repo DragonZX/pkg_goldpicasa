@@ -12,13 +12,7 @@ defined('_JEXEC') or die;
 
 JHTML::_('behavior.tooltip');
 
-
-if(version_compare(JVERSION,'1.6.0','ge')) {
-	// Joomla! 1.6
-	JHTML::_('script','system/multiselect.js',false,true);			
-} else {
-	// Joomla! 1.5
-}
+	JHTML::_('script','system/multiselect.js',false,true);
 
 //var_dump($this->isSsl);
 ?>

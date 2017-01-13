@@ -20,15 +20,8 @@ defined('_JEXEC') or die('Restricted access');
 	</thead>
 	<tbody>
 <?php
-$isChecked11='';
-if(version_compare(JVERSION,'1.6.0','ge')) {
-	// Joomla! 1.6 code here
-	$isChecked11='Joomla.isChecked(this.checked);';
-} else {
-	$isChecked11='isChecked(this.checked);';
-	// Joomla! 1.5 code here
-	// TODO  remove it!
-}
+
+$isChecked11='Joomla.isChecked(this.checked);';
 
 $i=0;
 foreach ($cd['users'] as $k => $v) {

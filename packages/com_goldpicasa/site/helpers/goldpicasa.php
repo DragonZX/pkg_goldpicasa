@@ -118,18 +118,10 @@ abstract class GoldpicasaHelper
 		$document->addScript('components/com_goldpicasa/assets/goldGallery.js');
 		$document->addStyleSheet('components/com_goldpicasa/assets/goldGallery.css'); 
 
-		//	die('1.6');
-		if(version_compare(JVERSION,'1.6.0','ge')) {
-			// Joomla! 1.6 code here
 			$jsparams.='goldpicasaAlbumsArray["'.$albumAndUser[0].'"].jversion=16;';
-			$document->addStyleSheet('components/com_goldpicasa/assets/slimbox18/css/slimbox.css'); 
+			$document->addStyleSheet('components/com_goldpicasa/assets/slimbox18/css/slimbox.css');
 			//echo '<script src="'. JURI::base() .'/components/com_goldpicasa/assets/slimbox18/slimbox_19.js" type="text/javascript"></script>'; // disabled in 3.2.4
-		} else {
-			// Joomla! 1.5 code here  - OLD!!!
-			$jsparams.='goldpicasaAlbumsArray["'.$albumAndUser[0].'"].jversion=15;';
-			$document->addScript('components/com_goldpicasa/assets/slimbox158/slimbox.js');
-			$document->addStyleSheet('components/com_goldpicasa/assets/slimbox158/css/slimbox.css');
-		}
+
 		
 		$lang = JFactory::getLanguage();
 		$extension = 'com_goldpicasa';
@@ -186,11 +178,6 @@ abstract class GoldpicasaHelper
 		//$html.='<p class="componentNameFooter">Gold Picasa Gallery</p>';
 		return $html;
 	}
-	
-	
-	
-	
-	
 
 	/**
 	 * Render ALBUMS LIST
@@ -356,8 +343,6 @@ abstract class GoldpicasaHelper
 		return $string;
 	}
 
-
-
     public static function getComponentParams() {
         if (!empty(self::$compParams)) {
             return self::$compParams;
@@ -439,14 +424,11 @@ abstract class GoldpicasaHelper
 
         }
 
-
         $css.='</style>';
-
         //var_dump($css);
         return $css;
 
     }
-
 
     public static function hex2rgba($color, $opacity = false) {
 
@@ -503,11 +485,7 @@ abstract class GoldpicasaHelper
         JFactory::getDocument()->setHeadData($head);
     }
 
-
-
-
 } // class end
-
 
 /**
  * Pokazuje album w module
@@ -535,4 +513,3 @@ function modGoldPicasa($params) {
 	}
 
 }
-
