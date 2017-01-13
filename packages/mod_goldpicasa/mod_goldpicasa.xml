@@ -41,7 +41,7 @@
 					
 					
 
-				<field name="goldGalleryShowAlbumName" type="radio" default="1" label="MOD_GOLDPICASA_SHOW_ALBUM_NAME" description="MOD_GOLDPICASA_SHOW_ALBUM_NAME_DSCR">
+				<field name="goldGalleryShowAlbumName" class="btn-group btn-group-yesno" type="radio" default="1" label="MOD_GOLDPICASA_SHOW_ALBUM_NAME" description="MOD_GOLDPICASA_SHOW_ALBUM_NAME_DSCR">
 				  <option value="1">JYES</option>
 				  <option value="0">JNO</option>
 				</field>
@@ -50,7 +50,7 @@
 					label="MOD_GOLDPICASA_CUSTOM_ALBUM_NAME" description="MOD_GOLDPICASA_IGNORED_IF_EMPTY" size="30" />
 
 
-				<field name="goldShowSummary" type="radio" default="1" label="MOD_GOLDPICASA_SHOW_DESCRIPTION" description="MOD_GOLDPICASA_SHOW_DESCRIPTION_DSCR">
+				<field name="goldShowSummary" class="btn-group btn-group-yesno" type="radio" default="1" label="MOD_GOLDPICASA_SHOW_DESCRIPTION" description="MOD_GOLDPICASA_SHOW_DESCRIPTION_DSCR">
 				  <option value="1">JYES</option>
 				  <option value="0">JNO</option>
 				</field>
@@ -193,12 +193,12 @@
 			</field>
 			
 			
-			<field name="goldGalleryCustomPager" type="radio" default="1" label="MOD_GOLDPICASA_CUSTOM_PAGER" description="">
+			<field name="goldGalleryCustomPager" class="btn-group btn-group-yesno" type="radio" default="1" label="MOD_GOLDPICASA_CUSTOM_PAGER" description="">
 				  <option value="1">JYES</option>
 				  <option value="0">JNO</option>
 			</field>
 			
-			<field name="goldGalleryShowPager" type="radio" default="1" label="MOD_GOLDPICASA_SHOW_PAGER" description="">
+			<field name="goldGalleryShowPager" class="btn-group btn-group-yesno" type="radio" default="1" label="MOD_GOLDPICASA_SHOW_PAGER" description="">
 				<option value="1">JYES</option>
 				<option value="0">JNO</option>
 	                 </field>
@@ -273,7 +273,7 @@
 				  <option value="show">JSHOW</option>
 			</field>
 			
-			<field name="goldGalleryAutoResize" type="radio" default="1" label="MOD_GOLDPICASA_AUTO_RESIZE" description="MOD_GOLDPICASA_AUTO_RESIZE_DSCR">
+			<field name="goldGalleryAutoResize" class="btn-group btn-group-yesno" type="radio" default="1" label="MOD_GOLDPICASA_AUTO_RESIZE" description="MOD_GOLDPICASA_AUTO_RESIZE_DSCR">
                                   <option value="1">JYES</option>
                                   <option value="0">JNO</option>
 			</field>					

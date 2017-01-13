@@ -20,7 +20,7 @@
 				<field name="goldGalleryAlbumId" type="modal_gold"	label="COM_GOLDPICASA_SELECT_ALBUM" />
 			 </fieldset>		
 			
-	          <field name="goldGalleryShowAlbumName" type="list" default="1" label="COM_GOLDPICASA_SHOW_ALBUM_NAME" description="COM_GOLDPICASA_SHOW_ALBUM_NAME_DSCR">
+	          <field name="goldGalleryShowAlbumName" class="btn-group btn-group-yesno" type="radio" default="1" label="COM_GOLDPICASA_SHOW_ALBUM_NAME" description="COM_GOLDPICASA_SHOW_ALBUM_NAME_DSCR">
 				  <option value="1">JYES</option>
 				  <option value="0">JNO</option>
 			  </field>
@@ -29,7 +29,7 @@
 					label="COM_GOLDPICASA_CUSTOM_ALBUM_NAME" description="COM_GOLDPICASA_IGNORED_IF_EMPTY" size="30" filter="raw" />
 					
 
-				<field name="goldShowSummary" type="list" default="1" label="COM_GOLDPICASA_SHOW_DESCRIPTION" description="COM_GOLDPICASA_SHOW_DESCRIPTION_DSCR">
+				<field name="goldShowSummary" class="btn-group btn-group-yesno" type="radio" default="1" label="COM_GOLDPICASA_SHOW_DESCRIPTION" description="COM_GOLDPICASA_SHOW_DESCRIPTION_DSCR">
 				  <option value="1">JYES</option>
 				  <option value="0">JNO</option>
 				</field>
@@ -171,7 +171,7 @@
 			</field>
 
 
-			<field name="goldGalleryCustomPager" type="list" default="1" label="COM_GOLDPICASA_CUSTOM_PAGER" description="">
+			<field name="goldGalleryCustomPager" class="btn-group btn-group-yesno" type="radio" default="1" label="COM_GOLDPICASA_CUSTOM_PAGER" description="">
 				  <option value="1">JYES</option>
 				  <option value="0">JNO</option>
 			</field>
@@ -238,11 +238,11 @@
 				  <option value="hide">JHIDE</option>
 			</field>
 			
-			<field name="goldGallerySlimboxAlbumname" type="list" default="hide" label="COM_GOLDPICASA_SLIMBOX_ALBUMNAME" description="COM_GOLDPICASA_SLIMBOX_ALBUMNAME_DSCR">
-				  <option value="hide">JHIDE</option>
-				  <option value="show">JSHOW</option>
+			<field name="goldGallerySlimboxAlbumname" class="btn-group btn-group-yesno" type="radio" default="hide" label="COM_GOLDPICASA_SLIMBOX_ALBUMNAME" description="COM_GOLDPICASA_SLIMBOX_ALBUMNAME_DSCR">
+				<option value="show">JSHOW</option>
+				<option value="hide">JHIDE</option>
 			</field>
-			<field name="goldGalleryAutoResize" type="list" default="1" label="COM_GOLDPICASA_AUTO_RESIZE" description="COM_GOLDPICASA_AUTO_RESIZE_DSCR">
+			<field name="goldGalleryAutoResize" class="btn-group btn-group-yesno" type="radio" default="1" label="COM_GOLDPICASA_AUTO_RESIZE" description="COM_GOLDPICASA_AUTO_RESIZE_DSCR">
                                   <option value="1">JYES</option>
                                   <option value="0">JNO</option>
 			</field>
