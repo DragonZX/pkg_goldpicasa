@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE extension PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://help.aunited.ru/dtd/joomla/2.5/package-install.dtd">
-<extension type="package" version="2.5">
+<extension type="package" version="2.5" method="upgrade">
 	<name>Gold Picasa Gallery Package</name>
 	<packagename>goldpicasa</packagename>
 	<version>4.0-alpha</version>
