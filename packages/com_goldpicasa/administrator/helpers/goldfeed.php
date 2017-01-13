@@ -77,9 +77,7 @@ class GoldfeedHelper
 		$db->setQuery((string)$query);
 		$data = $db->loadObject();
 		//$data = stripcslashes( $data->custom_data );
-
-		$data->custom_data = $data->params;
-
+        
 		if ( !isset($data->custom_data[1]) ) {
 			self::$feedData=array();
 			return false;
