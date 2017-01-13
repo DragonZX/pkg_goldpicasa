@@ -25,6 +25,7 @@
 		<language tag="fr-FR">language/fr-FR.com_goldpicasa.ini</language>
 		<language tag="nl-NL">language/nl-NL.com_goldpicasa.ini</language>
 		<language tag="pl-PL">language/pl-PL.com_goldpicasa.ini</language>
+		<language tag="ru-RU">language/ru-RU.com_goldpicasa.ini</language>
 	</languages>
 	<administration>
 		<menu img="components/com_goldpicasa/assets/img/picasa.png">COM_GOLDPICASA</menu>
@@ -45,18 +46,14 @@
 		<languages folder="administrator">
 			<language tag="en-GB">language/en-GB.com_goldpicasa.ini</language>
 			<language tag="en-GB">language/en-GB.com_goldpicasa.sys.ini</language>
-
 			<language tag="fr-FR">language/fr-FR.com_goldpicasa.ini</language>
 			<language tag="fr-FR">language/fr-FR.com_goldpicasa.sys.ini</language>
-
 			<language tag="pl-PL">language/pl-PL.com_goldpicasa.ini</language>
 			<language tag="pl-PL">language/pl-PL.com_goldpicasa.sys.ini</language>
-
 			<language tag="nl-NL">language/nl-NL.com_goldpicasa.ini</language>
-                        <language tag="nl-NL">language/nl-NL.com_goldpicasa.sys.ini</language>
-
+			<language tag="nl-NL">language/nl-NL.com_goldpicasa.sys.ini</language>
 			<language tag="ru-RU">language/ru-RU.com_goldpicasa.ini</language>
-                        <language tag="ru-RU">language/ru-RU.com_goldpicasa.sys.ini</language>
+            <language tag="ru-RU">language/ru-RU.com_goldpicasa.sys.ini</language>
 		</languages>
 	</administration>
 </extension>

@@ -14,7 +14,11 @@
 		<filename>goldpicasa_form.xml</filename>
 	</files>
 	<languages>
-	    <language tag="en-GB">en-GB.plg_content_goldpicasa.sys.ini</language>
+	    <language tag="en-GB">language/en-GB.plg_content_goldpicasa.sys.ini</language>
+        <language tag="fr-FR">language/fr-FR.plg_content_goldpicasa.sys.ini</language>
+        <language tag="nl-NL">language/nl-NL.plg_content_goldpicasa.sys.ini</language>
+        <language tag="pl-PL">language/pl-PL.plg_content_goldpicasa.sys.ini</language>
+        <language tag="ru-RU">language/ru-RU.plg_content_goldpicasa.sys.ini</language>
 	</languages>
 	<scriptfile>install.php</scriptfile>
 	<config>

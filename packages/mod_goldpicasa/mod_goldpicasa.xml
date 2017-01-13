@@ -19,12 +19,16 @@
 		<filename>mod_goldpicasa.xml</filename>
 	</files>	 
 	<languages>
-                <language tag="en-GB">language/en-GB.mod_goldpicasa.sys.ini</language>
-                <language tag="en-GB">language/en-GB.mod_goldpicasa.ini</language>
-                <language tag="fr-FR">language/fr-FR.mod_goldpicasa.ini</language>
-                <language tag="nl-NL">language/nl-NL.mod_goldpicasa.ini</language>
-                <language tag="pl-PL">language/pl-PL.mod_goldpicasa.ini</language>
-                <language tag="ru-RU">language/ru-RU.mod_goldpicasa.ini</language>
+		<language tag="en-GB">language/en-GB.mod_goldpicasa.sys.ini</language>
+		<language tag="fr-FR">language/fr-FR.mod_goldpicasa.sys.ini</language>
+		<language tag="nl-NL">language/nl-NL.mod_goldpicasa.sys.ini</language>
+		<language tag="pl-PL">language/pl-PL.mod_goldpicasa.sys.ini</language>
+		<language tag="ru-RU">language/ru-RU.mod_goldpicasa.sys.ini</language>
+        <language tag="en-GB">language/en-GB.mod_goldpicasa.ini</language>
+        <language tag="fr-FR">language/fr-FR.mod_goldpicasa.ini</language>
+        <language tag="nl-NL">language/nl-NL.mod_goldpicasa.ini</language>
+        <language tag="pl-PL">language/pl-PL.mod_goldpicasa.ini</language>
+        <language tag="ru-RU">language/ru-RU.mod_goldpicasa.ini</language>
     </languages>
 
 	<config>
