@@ -22,8 +22,6 @@ class plgContentgoldpicasaInstallerScript {
         function installMe()
         {
            $db = JFactory::getDbo();
-	   $version = new JVersion;
-	   $joomla = $version->getShortVersion();
 
 		$query = "UPDATE #__extensions  SET enabled  = 1 WHERE element='goldpicasa' AND type ='plugin' LIMIT 1";
            $db->setQuery( $query );
