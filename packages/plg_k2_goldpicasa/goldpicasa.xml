@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://help.aunited.ru/dtd/joomla/2.5/plugin-install.dtd">
 <extension version="2.5" type="plugin" group="k2" method="upgrade">
 	<name>Gold Picasa for K2 (by Tom Konopelski)</name>
 	<author>Tom Konopelski</author>
@@ -15,14 +16,8 @@
 	</files>
 	
 	<fields group="item-gallery" addfieldpath="/administrator/components/com_k2fields/elements/">
-          	
-          	<fieldset name="goldpicasa"
-				addfieldpath="/administrator/components/com_goldpicasa/models/fields"
-				label="Gold Picasa Gallery" >
-				
-				<field name="goldGalleryAlbumId" type="modal_gold"
-					label="COM_GOLDPICASA_SELECT_ALBUM" />
-					
+          	<fieldset name="goldpicasa"	addfieldpath="/administrator/components/com_goldpicasa/models/fields" label="Gold Picasa Gallery" >
+				<field name="goldGalleryAlbumId" type="modal_gold"	label="COM_GOLDPICASA_SELECT_ALBUM" />
 			 </fieldset>		
 			
 	          <field name="goldGalleryShowAlbumName" type="list" default="1" label="COM_GOLDPICASA_SHOW_ALBUM_NAME" description="COM_GOLDPICASA_SHOW_ALBUM_NAME_DSCR">
@@ -56,7 +51,6 @@
         	            <option value="320">320</option>
         	            <option value="400">400</option>
         	            <option value="512">512</option>
-
 				</field>
 
 
