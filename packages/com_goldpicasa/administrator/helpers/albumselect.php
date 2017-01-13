@@ -26,7 +26,6 @@ defined('_JEXEC') or die('Restricted access');
 	float: left;
 	width: 99%;
 	margin-bottom: 10px;
-
 }
 
 #albumselectDrop div.removeAlbum {

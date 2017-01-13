@@ -15,7 +15,6 @@ defined('_JEXEC') or die('Restricted access');
  */
 class GoldfeedHelper
 {
-
 	public static $feedData=array();
 	public static $feedDataFiltered=array();
 
@@ -32,7 +31,6 @@ class GoldfeedHelper
 		self::$feedData['users'][ $id ] = $username;
 	}
 
-
 	/**
 	 * Remove users
 	 * @param array $users
@@ -47,7 +45,6 @@ class GoldfeedHelper
 		}
 		return true;
 	}
-
 
 	/**
 	 * Set default user
@@ -108,5 +105,4 @@ class GoldfeedHelper
 		$db->query();
 		return false;
 	}
-
 }

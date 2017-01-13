@@ -24,14 +24,12 @@
 				  <option value="1">JYES</option>
 				  <option value="0">JNO</option>
 			  </field>
-				<field name="goldGalleryCustomAlbumName" type="text" default=""
-					label="COM_GOLDPICASA_CUSTOM_ALBUM_NAME" description="COM_GOLDPICASA_IGNORED_IF_EMPTY" size="30" filter="raw" />
+				<field name="goldGalleryCustomAlbumName" type="text" default=""	label="COM_GOLDPICASA_CUSTOM_ALBUM_NAME" description="COM_GOLDPICASA_IGNORED_IF_EMPTY" size="30" filter="raw" />
 				<field name="goldShowSummary" class="btn-group btn-group-yesno" type="radio" default="1" label="COM_GOLDPICASA_SHOW_DESCRIPTION" description="COM_GOLDPICASA_SHOW_DESCRIPTION_DSCR">
 				  <option value="1">JYES</option>
 				  <option value="0">JNO</option>
 				</field>
-				<field name="goldGalleryThumbnailSize" type="list" default="150"
-					label="COM_GOLDPICASA_THUMBNAIL_SIZE" description="COM_GOLDPICASA_THUMBNAIL_SIZE_DSCR">
+				<field name="goldGalleryThumbnailSize" type="list" default="150" label="COM_GOLDPICASA_THUMBNAIL_SIZE" description="COM_GOLDPICASA_THUMBNAIL_SIZE_DSCR">
 					<option value="32">32</option>
 					<option value="48">48</option>
 					<option value="64">64</option>
@@ -47,8 +45,7 @@
         	            <option value="400">400</option>
         	            <option value="512">512</option>
 				</field>
-				<field name="goldGalleryImgmax" type="list" default="1024"
-					label="COM_GOLDPICASA_MAX_IMAGE_RESOLUTION" description="COM_GOLDPICASA_MAX_IMAGE_RESOLUTION_DSCR" >
+				<field name="goldGalleryImgmax" type="list" default="1024" label="COM_GOLDPICASA_MAX_IMAGE_RESOLUTION" description="COM_GOLDPICASA_MAX_IMAGE_RESOLUTION_DSCR" >
 					<option value="94">94</option>
 					<option value="110">110</option>
 					<option value="128">128</option>
@@ -83,12 +80,9 @@
 				  <option value="c">COM_GOLDPICASA_THUMBNAIL_TYPE_CROPED</option>
 				  <option value="u">COM_GOLDPICASA_THUMBNAIL_TYPE_UNCROPED</option>
 			</field>	
-			<field name="goldGalleryMarginRight" type="integer" default="5"
-					label="COM_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN" description="COM_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN_DSCR" first="0" last="100" step="5" />
-			<field name="goldGalleryMarginBottom" type="integer" default="5"
-					label="COM_GOLDPICASA_THUMBNAIL_BOTTOM_MARGIN" description="COM_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN_DSCR" first="0" last="100" step="5" />
-			<field name="goldGalleryBorderType" type="list" default="50"
-					label="COM_GOLDPICASA_IMAGE_BORDER" description="">
+			<field name="goldGalleryMarginRight" type="integer" default="5"	label="COM_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN" description="COM_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN_DSCR" first="0" last="100" step="5" />
+			<field name="goldGalleryMarginBottom" type="integer" default="5" label="COM_GOLDPICASA_THUMBNAIL_BOTTOM_MARGIN" description="COM_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN_DSCR" first="0" last="100" step="5" />
+			<field name="goldGalleryBorderType" type="list" default="50" label="COM_GOLDPICASA_IMAGE_BORDER" description="">
 					<option value="0">COM_GOLDPICASA_NONE</option>
 					<option value="1">COM_GOLDPICASA_IMAGE_BORDER_STANDARD</option>
 					<option value="2">COM_GOLDPICASA_IMAGE_BORDER_PADDING2</option>
@@ -97,8 +91,7 @@
 					<option value="5">COM_GOLDPICASA_IMAGE_BORDER_PADDING10</option>
 					<option value="6">COM_GOLDPICASA_IMAGE_BORDER_PADDING12</option>
 			</field>
-			<field name="goldGalleryBorderColor" type="list"
-					label="COM_GOLDPICASA_IMAGE_BORDER_COLOR" description="">
+			<field name="goldGalleryBorderColor" type="list" label="COM_GOLDPICASA_IMAGE_BORDER_COLOR" description="">
 					<option value="#CCCCCC">gainsboro</option>
 					<option value="black">black</option>
 					<option value="silver">silver</option>
@@ -116,8 +109,7 @@
 					<option value="teal">teal</option>
 					<option value="aqua">aqua</option>
 			</field>
-			<field name="goldGalleryBackgroundColor" type="list" default=""
-					label="COM_GOLDPICASA_IMAGE_BACKGROUND_COLOR" description="">
+			<field name="goldGalleryBackgroundColor" type="list" default=""	label="COM_GOLDPICASA_IMAGE_BACKGROUND_COLOR" description="">
 					<option value="">COM_GOLDPICASA_NONE</option>
 					<option value="#CCCCCC">gainsboro</option>
 					<option value="black">black</option>

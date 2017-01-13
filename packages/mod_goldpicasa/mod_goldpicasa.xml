@@ -36,14 +36,12 @@
 				  <option value="1">JYES</option>
 				  <option value="0">JNO</option>
 				</field>
-				<field name="goldGalleryCustomAlbumName" type="text" default=""
-					label="MOD_GOLDPICASA_CUSTOM_ALBUM_NAME" description="MOD_GOLDPICASA_IGNORED_IF_EMPTY" size="30" />
+				<field name="goldGalleryCustomAlbumName" type="text" default=""	label="MOD_GOLDPICASA_CUSTOM_ALBUM_NAME" description="MOD_GOLDPICASA_IGNORED_IF_EMPTY" size="30" />
 				<field name="goldShowSummary" class="btn-group btn-group-yesno" type="radio" default="1" label="MOD_GOLDPICASA_SHOW_DESCRIPTION" description="MOD_GOLDPICASA_SHOW_DESCRIPTION_DSCR">
 				  <option value="1">JYES</option>
 				  <option value="0">JNO</option>
 				</field>
-				<field name="goldGalleryThumbnailSize" type="list" default="150"
-					label="MOD_GOLDPICASA_THUMBNAIL_SIZE" description="MOD_GOLDPICASA_THUMBNAIL_SIZE_DSCR">
+				<field name="goldGalleryThumbnailSize" type="list" default="150" label="MOD_GOLDPICASA_THUMBNAIL_SIZE" description="MOD_GOLDPICASA_THUMBNAIL_SIZE_DSCR">
 					<option value="32">32</option>
 					<option value="48">48</option>
 					<option value="64">64</option>
@@ -59,8 +57,7 @@
                     <option value="400">400</option>
                     <option value="512">512</option>
 				</field>
-				<field name="goldGalleryImgmax" type="list" default="800"
-					label="MOD_GOLDPICASA_MAX_IMAGE_RESOLUTION" description="MOD_GOLDPICASA_MAX_IMAGE_RESOLUTION_DSCR" >
+				<field name="goldGalleryImgmax" type="list" default="800" label="MOD_GOLDPICASA_MAX_IMAGE_RESOLUTION" description="MOD_GOLDPICASA_MAX_IMAGE_RESOLUTION_DSCR" >
 					<option value="94">94</option>
 					<option value="110">110</option>
 					<option value="128">128</option>
@@ -87,10 +84,8 @@
 				  <option value="c">MOD_GOLDPICASA_THUMBNAIL_TYPE_CROPED</option>
 				  <option value="u">MOD_GOLDPICASA_THUMBNAIL_TYPE_UNCROPED</option>
 			</field>	
-			<field name="goldGalleryMarginRight" type="integer" default="5"
-					label="MOD_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN" description="MOD_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN_DSCR" first="0" last="100" step="5" />
-			<field name="goldGalleryMarginBottom" type="integer" default="5"
-					label="MOD_GOLDPICASA_THUMBNAIL_BOTTOM_MARGIN" description="MOD_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN_DSCR" first="0" last="100" step="5" />
+			<field name="goldGalleryMarginRight" type="integer" default="5"	label="MOD_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN" description="MOD_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN_DSCR" first="0" last="100" step="5" />
+			<field name="goldGalleryMarginBottom" type="integer" default="5" label="MOD_GOLDPICASA_THUMBNAIL_BOTTOM_MARGIN" description="MOD_GOLDPICASA_THUMBNAIL_RIGHT_MARGIN_DSCR" first="0" last="100" step="5" />
 			<field name="goldGalleryBorderType" type="list" default="50"
 					label="MOD_GOLDPICASA_IMAGE_BORDER" description="">
 					<option value="0">MOD_GOLDPICASA_NONE</option>
@@ -101,8 +96,7 @@
 					<option value="5">MOD_GOLDPICASA_IMAGE_BORDER_PADDING10</option>
 					<option value="6">MOD_GOLDPICASA_IMAGE_BORDER_PADDING12</option>
 			</field>
-			<field name="goldGalleryBorderColor" type="list"
-					label="MOD_GOLDPICASA_IMAGE_BORDER_COLOR" description="">
+			<field name="goldGalleryBorderColor" type="list" label="MOD_GOLDPICASA_IMAGE_BORDER_COLOR" description="">
 					<option value="#CCCCCC">gainsboro</option>
 					<option value="black">black</option>
 					<option value="silver">silver</option>
@@ -120,8 +114,7 @@
 					<option value="teal">teal</option>
 					<option value="aqua">aqua</option>
 			</field>
-			<field name="goldGalleryBackgroundColor" type="list" default=""
-					label="MOD_GOLDPICASA_IMAGE_BACKGROUND_COLOR" description="">
+			<field name="goldGalleryBackgroundColor" type="list" default=""	label="MOD_GOLDPICASA_IMAGE_BACKGROUND_COLOR" description="">
 					<option value="">MOD_GOLDPICASA_NONE</option>
 					<option value="#CCCCCC">gainsboro</option>
 					<option value="black">black</option>
