@@ -23,7 +23,7 @@ if ($params->get('fontcolor', '')) {
     $defFontColor=$params->get('fontcolor', $defFontColor);
 }
 
-$defOverlayColor='#000';
+$defOverlayColor='#000000';
 if ($params->get('overlaycolor', '')) {
     $defOverlayColor=$params->get('overlaycolor', $defOverlayColor);
 }
