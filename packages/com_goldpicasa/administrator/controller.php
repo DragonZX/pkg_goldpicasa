@@ -167,7 +167,7 @@ class GoldpicasaController extends JController
 			return false;
 		}
 
-		JToolBarHelper::addNew('adduser', JText::_('JNEW'));
+		JToolBarHelper::addNew('adduser', JText::_('JACTION_CREATE'));
 		JToolBarHelper::makeDefault('makeDefault', JText::_('JDEFAULT'));
 
 		JToolBarHelper::divider();

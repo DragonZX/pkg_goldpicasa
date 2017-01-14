@@ -56,10 +56,10 @@ echo 'var goldpicasaSSL="' . $this->isSsl .'";';
 <table style="margin-left: 50px; display: none;" id="tableFound">
 <tr>
 <td>
-<input type="button" value="search again" onclick="searchAgain();" style="margin-left: 50px;" />
+<input type="button" value="<?php echo JText::_('COM_GOLDPICASA_SEARCH_AGAIN'); ?>" onclick="searchAgain();" style="margin-left: 50px;" />
 </td>
 <td>
-<input type="submit" value="save" class="inputbox required" style="margin-left: 20px; font-size: 2.5em;" />
+<input type="submit" value="<?php echo JText::_('JAPPLY'); ?>" class="inputbox required" style="margin-left: 20px;" />
 </td>
 </tr>
 </table>
