@@ -1,6 +1,6 @@
 <?php
 /**
- * @version $Id: mod_djimageslider.php 36 2016-09-01 14:16:59Z szymon $
+ * @version $Id: mod_goldslider.php 36 2016-09-01 14:16:59Z szymon $
  * @package DJ-ImageSlider
  * @subpackage DJ-ImageSlider Component
  * @copyright Copyright (C) 2012 DJ-Extensions.com, All rights reserved.
@@ -39,18 +39,18 @@ $document = JFactory::getDocument();
 if($params->get('slider_source')==1) {
 	jimport('joomla.application.component.helper');
 	if(!JComponentHelper::isEnabled('com_djimageslider', true)){
-		$app->enqueueMessage(JText::_('MOD_DJIMAGESLIDER_NO_COMPONENT'),'notice');
+		$app->enqueueMessage(JText::_('MOD_GOLDSLIDER_NO_COMPONENT'),'notice');
 		return;
 	}
 	$slides = modDJImageSliderHelper::getImagesFromDJImageSlider($params);
 	if($slides==null) {
-		$app->enqueueMessage(JText::_('MOD_DJIMAGESLIDER_NO_CATEGORY_OR_ITEMS'),'notice');
+		$app->enqueueMessage(JText::_('MOD_GOLDSLIDER_NO_CATEGORY_OR_ITEMS'),'notice');
 		return;
 	}
 } else {
 	$slides = modDJImageSliderHelper::getImagesFromFolder($params);
 	if($slides==null) {
-		$app->enqueueMessage(JText::_('MOD_DJIMAGESLIDER_NO_CATALOG_OR_FILES'),'notice');
+		$app->enqueueMessage(JText::_('MOD_GOLDSLIDER_NO_CATALOG_OR_FILES'),'notice');
 		return;
 	}
 }
@@ -73,7 +73,7 @@ $params->set('direction', $direction);
 $theme = $params->get('theme', 'default');
 
 if($theme != '_override') {
-	$css = 'modules/mod_djimageslider/themes/'.$theme.'/css/djimageslider.css';
+	$css = 'modules/mod_goldslider/themes/'.$theme.'/css/djimageslider.css';
 } else {
 	$theme = 'override';
 	$css = 'templates/'.$app->getTemplate().'/css/djimageslider.css';
@@ -93,27 +93,27 @@ $jquery = version_compare(JVERSION, '3.0.0', '>=');
 $canDefer = preg_match('/(?i)msie [6-9]/',$_SERVER['HTTP_USER_AGENT']) ? false : true;
 
 $db = JFactory::getDBO();
-$db->setQuery("SELECT manifest_cache FROM #__extensions WHERE element='mod_djimageslider' LIMIT 1");
+$db->setQuery("SELECT manifest_cache FROM #__extensions WHERE element='mod_goldslider' LIMIT 1");
 $ver = json_decode($db->loadResult());
 $ver = $ver->version;
 
 if ($jquery) {
 	JHTML::_('jquery.framework');
 	$document->addScript(JURI::root(true).'/media/djextensions/jquery-easing/jquery.easing.min.js', 'text/javascript', $canDefer);
-	$document->addScript(JURI::root(true).'/modules/mod_djimageslider/assets/js/slider.js?v='.$ver, 'text/javascript', $canDefer);
+	$document->addScript(JURI::root(true).'/modules/mod_goldslider/assets/js/slider.js?v='.$ver, 'text/javascript', $canDefer);
 } else {
 	JHTML::_('behavior.framework', true);
-	$document->addScript(JURI::root(true).'/modules/mod_djimageslider/assets/js/moo.slider.js?v='.$ver, 'text/javascript', $canDefer);
+	$document->addScript(JURI::root(true).'/modules/mod_goldslider/assets/js/moo.slider.js?v='.$ver, 'text/javascript', $canDefer);
 }
 
 if($params->get('link_image',1) > 1) {
 	if($jquery) {
 		$document->addScript(JURI::root(true).'/media/djextensions/magnific/magnific.js', 'text/javascript', $canDefer);
 		$document->addStyleSheet(JURI::root(true).'/media/djextensions/magnific/magnific.css');
-		$document->addScript(JURI::root(true).'/modules/mod_djimageslider/assets/js/magnific-init.js', 'text/javascript', $canDefer);
+		$document->addScript(JURI::root(true).'/modules/mod_goldslider/assets/js/magnific-init.js', 'text/javascript', $canDefer);
 	} else {
-		$document->addScript(JURI::root(true).'/modules/mod_djimageslider/assets/slimbox/js/slimbox.js', 'text/javascript', $canDefer);
-		$document->addStyleSheet(JURI::root(true).'/modules/mod_djimageslider/assets/slimbox/css/slimbox.css');
+		$document->addScript(JURI::root(true).'/modules/mod_goldslider/assets/slimbox/js/slimbox.js', 'text/javascript', $canDefer);
+		$document->addStyleSheet(JURI::root(true).'/modules/mod_goldslider/assets/slimbox/css/slimbox.css');
 	}
 }
 
@@ -151,4 +151,4 @@ $style = modDJImageSliderHelper::getStyles($params);
 $navigation = modDJImageSliderHelper::getNavigation($params,$mid);
 $show = (object) array('arr'=>$params->get('show_arrows'), 'btn'=>$params->get('show_buttons'), 'idx'=>$params->get('show_custom_nav'));
 
-require JModuleHelper::getLayoutPath('mod_djimageslider', $params->get('layout','default'));
+require JModuleHelper::getLayoutPath('mod_goldslider', $params->get('layout','default'));
