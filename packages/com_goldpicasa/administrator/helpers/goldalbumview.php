@@ -8,7 +8,7 @@ defined('_JEXEC') or die('Restricted access');
 ?>
 
 <div id="content-container">	
-			<h1 id="navigate"><a href="index.php?option=com_goldpicasa">Back to the album list</a></h1>
+			<h1 id="navigate"><a href="index.php?option=com_goldpicasa"><?php echo JText::_('COM_GOLDPICASA_BACK_TO_ALBUM_LIST'); ?></a></h1>
 			<div id="photos"></div>
 </div>
 <link href="/administrator/components/com_goldpicasa/assets/css/picasaViewer.css" type="text/css" rel="stylesheet">

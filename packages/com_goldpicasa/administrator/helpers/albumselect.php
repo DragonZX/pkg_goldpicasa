@@ -123,7 +123,7 @@ if ( isset($users) && !empty($users) ) {
 <input type="button" value="<?php echo JText::_('JCANCEL'); ?>" onclick="window.parent.SqueezeBox.close();"  />
 
 <div id="goldGallerySpinner" style="visibility: hidden;">
-	<img src="components/com_goldpicasa/assets/img/spinner.gif" style="margin-bottom:-4px;" />&nbsp;&nbsp;Loading...
+	<img src="components/com_goldpicasa/assets/img/spinner.gif" style="margin-bottom:-4px;" />&nbsp;&nbsp;<?php echo JText::_('COM_GOLDPICASA_LOADING'); ?>...
 </div>
 
 <?php echo JText::_('COM_GOLDPICASA_SELECTED_ALBUMS'); ?>:

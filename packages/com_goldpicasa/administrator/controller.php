@@ -206,31 +206,31 @@ class GoldpicasaController extends JController
 
 		echo '<h1>Gold Picasa Gallery</h1>';
 		echo '<div style="margin-left:15px;">';
-		echo '<h3>Homepage: <a href="http://goldpicasagallery.konopelski.info" target="_blank">goldpicasagallery.konopelski.info</a></h3>';
-		echo '<h3>Extension version: '.$version.'</h3>';
+		echo '<h3>'.JText::_('JSite').': <a href="http://goldpicasagallery.konopelski.info" target="_blank">goldpicasagallery.konopelski.info</a></h3>';
+		echo '<h3>'.JText::_('JVersion').': '.$version.'</h3>';
 		
 		if (isset( $x->goldTrial )) {
-			echo '<h3>Trial end: <a>'. ( (string) $x->goldTrial ) .'</a></h3>';
+			echo '<h3>'.JText::_('Trial end').': <a>'. ( (string) $x->goldTrial ) .'</a></h3>';
 		}
 		
 		$pluginStatus = JPluginHelper::isEnabled('content', 'goldpicasa');
 		//$pluginStatus=false;
 		if ($pluginStatus===true) {
-			echo '<h3>Plugin status: <span style="color: green;">Enabled</span></h3>';
+			echo '<h3>'.JText::_('COM_GOLDPICASA_PLUGIN_STATUS').': <span style="color: green;">'.JText::_('JENABLED').'</span></h3>';
 		} else {
-			echo '<h3>Plugin status: <span style="color: red;">Disabled</span> <small>(<a href="'. JURI::base()  .'index.php?option=com_plugins&filter_search=gold" target="_blank">enable plugin</a>)</small></h3>';
+			echo '<h3>'.JText::_('COM_GOLDPICASA_PLUGIN_STATUS').': <span style="color: red;">'.JText::_('JDISABLED').'</span> <small>(<a href="'. JURI::base()  .'index.php?option=com_plugins&filter_search=gold" target="_blank">enable plugin</a>)</small></h3>';
 		}
 		
 		$k2pluginStatus = JPluginHelper::isEnabled('k2', 'goldpicasa');
 		if ($k2pluginStatus===true) {
-			echo '<h3><a href="http://getk2.org" target="_blank" title="K2, the powerful content extension for Joomla!">K2</a> Plugin status: <span style="color: green;">Enabled</span></h3>';
+			echo '<h3><a href="http://getk2.org" target="_blank" title="K2, the powerful content extension for Joomla!">K2</a> '.JText::_('COM_GOLDPICASA_PLUGIN_STATUS').': <span style="color: green;">'.JText::_('JENABLED').'</span></h3>';
 		} else {
-			echo '<h3><a href="http://getk2.org" target="_blank" title="K2, the powerful content extension for Joomla!">K2</a> Plugin status: <span style="color: red;">Disabled</span> <small>(<a href="'. JURI::base()  .'index.php?option=com_plugins&filter_search=gold" target="_blank">enable plugin</a>)</small></h3>';
+			echo '<h3><a href="http://getk2.org" target="_blank" title="K2, the powerful content extension for Joomla!">K2</a> '.JText::_('COM_GOLDPICASA_PLUGIN_STATUS').': <span style="color: red;">'.JText::_('JDISABLED').'</span> <small>(<a href="'. JURI::base()  .'index.php?option=com_plugins&filter_search=gold" target="_blank">'.JText::_('COM_GOLDPICASA_ENABLE_PLUGIN').'</a>)</small></h3>';
 		}
 		
 		echo '</td><td valign="top">';
 		
-		echo '<h4>Check <a href="https://plus.google.com/106611905805476290424/posts" target="_blank">google+ page</a> for updates</h4>';		
+		echo '<h4>'.JText::_('COM_GOLDPICASA_CHECK_FOR_UPDATES').'</h4>';
 		/* 
 		*/
 		echo '<div class="g-plus" data-width="350" data-href="//plus.google.com/106611905805476290424" data-rel="publisher" style="float:right;"></div>';
