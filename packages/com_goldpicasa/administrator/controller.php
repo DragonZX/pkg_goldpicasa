@@ -167,12 +167,11 @@ class GoldpicasaController extends JController
 			return false;
 		}
 
-		JToolBarHelper::addNew('adduser', JText::_('COM_GOLDPICASA_ADD_NEW_USER', 'Add new user!!'));
-		JToolBarHelper::makeDefault('makeDefault', JText::_('COM_GOLDPICASA_SET_DEFAULT'));
+		JToolBarHelper::addNew('adduser', JText::_('JNEW'));
+		JToolBarHelper::makeDefault('makeDefault', JText::_('JDEFAULT'));
 
 		JToolBarHelper::divider();
-		//JToolBarHelper::deleteListX(JText::_('COM_GOLDPICASA_ARE_YOU_SURE'), 'users', JText::_('COM_GOLDPICASA_DELETE_USER'));
-		JToolBarHelper::deleteList(JText::_('COM_GOLDPICASA_ARE_YOU_SURE'), 'users', JText::_('COM_GOLDPICASA_DELETE_USER'));
+		JToolBarHelper::deleteList(JText::_('COM_GOLDPICASA_ARE_YOU_SURE'), 'users', JText::_('JACTION_DELETE'));
 		$cd = GoldfeedHelper::getCustomData();
 
 		require_once JPATH_COMPONENT.'/helpers/goldusersview.php';

@@ -12,10 +12,10 @@ defined('_JEXEC') or die('Restricted access');
 	<thead>
 	<tr>
 	<th width="1%">
-		<input type="checkbox" name="checkall-toggle" value="" title="Check All" onclick="Joomla.checkAll(this)" />
-	</th>	
-	<th width="30px"><?php echo JText::_('COM_GOLDPICASA_DEFAULT'); ?></th>
-	<th style="text-align:left;"><?php echo JText::_('COM_GOLDPICASA_NAME'); ?></th>
+		<input type="checkbox" class="hasTooltip" name="checkall-toggle" value="" title="<?php echo JText::_('JGLOBAL_CHECK_ALL'); ?>" onclick="Joomla.checkAll(this)" />
+	</th>
+        <th width="10%"><div align="center"><?php echo JText::_('JDEFAULT'); ?></div></th>
+        <th style="text-align:left;"><?php echo JText::_('JGLOBAL_USERNAME'); ?></th>
 	</tr>
 	</thead>
 	<tbody>
@@ -27,15 +27,13 @@ $i=0;
 foreach ($cd['users'] as $k => $v) {
 	echo '<tr class="row'.($i % 2).'">';
 	
-	echo '<td class="center"><input type="checkbox" id="cb0" name="cid[]" value="'.$k.'" onclick="'. $isChecked11 . '" title="Checkbox for '.$v.'" /></td>';
-	
+	echo '<td class="center"><input type="checkbox" id="cb0" name="cid[]" value="'.$k.'" onclick="'. $isChecked11 . '"/></td>';
 
 	echo '<td class="center">';
 	if ( isset($cd['default'][2]) && $cd['default'] === $k ) {
 		//echo '<a class="grid_true"></a>';
 		echo '<img src="'.JURI::base().'/components/com_goldpicasa/assets/img/publish_x.png" title="Default" alt="Default"  />';
 	} else {
-		//echo '<img src="'.JURI::base().'templates/bluestork/images/admin/disabled.png" alt=""  />';
 		echo '<img src="'.JURI::base().'/components/com_goldpicasa/assets/img/disabled.png" alt=""  />';
 	}
 	echo '</td>';
