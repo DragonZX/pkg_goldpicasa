@@ -319,7 +319,7 @@ if ( isset($this->users) && !empty($this->users) ) {
 <tr>
 
 <td valign="top">
-<img id="gptii_thumb" src="http://j25.lan/administrator/components/com_goldpicasa/assets/goldpicasa_logo.png">
+<img id="gptii_thumb" src="<?php echo JURI::base(); ?>administrator/components/com_goldpicasa/assets/goldpicasa_logo.png">
 </td>
 
 <td valign="top" style="padding-left:15px;">

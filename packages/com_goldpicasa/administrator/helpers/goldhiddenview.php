@@ -11,7 +11,7 @@ Link or ID:
 <input name="hidden_url" id="hidden_url" size="100" />
 <input type="button" value="check" onclick="getHidden();" />
 </form>
-<script type="text/javascript" src="<?php echo JURI::base(); ?>components/com_goldpicasa/assets/mooToolsPicasaViewer.js"></script>
+<script type="text/javascript" src="<?php echo JURI::base(); ?>administrator/components/com_goldpicasa/assets/mooToolsPicasaViewer.js"></script>
 
 <div id="goldGalleryInfoDiv"></div>
 
