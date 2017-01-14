@@ -42,7 +42,7 @@ if ($params->get('mootoolscore', '')) {
 
 <form method="post">
     <fieldset class="adminform long">
-        <legend>Theme</legend>
+        <legend><?php echo JText::_('Theme'); ?></legend>
         <table>
             <tr>
                 <td>
@@ -70,28 +70,28 @@ if ($params->get('mootoolscore', '')) {
 
         <table>
             <tr>
-                <td> Font size: </td>
+                <td><?php echo JText::_('Font size'); ?></td>
                 <td> <input type="text" name="gpgsettings[fontsize]" size="6" placeholder="11px" value="<?php echo $defFontsize; ?>" /> </td>
                 <td><?php echo JText::_('The font-size property sets the size of a font. Examples: 12px, 1.2em, 0.8em'); ?>  </td>
             </tr>
 
             <tr>
-                <td>Font line-height:</td>
+                <td><?php echo JText::_('Font line-height'); ?></td>
                 <td><input type="text" name="gpgsettings[lineheight]" size="6" placeholder="1.1em" value="<?php echo $defLineHeight; ?>" /></td>
                 <td>The line-height property specifies the line height.</td>
             </tr>
             <tr>
-                <td>Font color:</td>
+                <td><?php echo JText::_('Font color'); ?></td>
                 <td><input type="text" name="gpgsettings[fontcolor]" id="examplecolor" class="input-colorpicker" value="<?php echo $defFontColor; ?>" size="10" /></td>
                 <td><?php echo $defFontColor; ?></td>
             </tr>
             <tr>
-                <td>Overlay color:</td>
+                <td><?php echo JText::_('Overlay color'); ?></td>
                 <td><input type="text" name="gpgsettings[overlaycolor]" id="examplecolor" class="input-colorpicker" value="<?php echo $defOverlayColor; ?>" size="10" /></td>
                 <td>Sets the background color of a overlay.</td>
             </tr>
             <tr>
-                <td>Overlay opacity-level:</td>
+                <td><?php echo JText::_('Overlay opacity-level'); ?></td>
                 <td><select name="gpgsettings[overlaylevel]">
                     <?php
                     $overlayList=array(1, 0.9 , 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1);
@@ -100,21 +100,20 @@ if ($params->get('mootoolscore', '')) {
                         if ($defOverlayLevel == $ol) {
                             $selOv = ' selected="selected" ';
                         }
-
                         echo '<option value="'.$ol.'" '.$selOv.'>'.$ol.'</option>';
                     }
                     ?>
                     </select>
                 </td>
-                <td>The opacity-level describes the transparency-level, where 1 is not transperant at all, 0.5 is 50% see-through, and 0 is completely transparent.</td>
+                <td><?php echo JText::_('The opacity-level describes the transparency-level, where 1 is not transperant at all, 0.5 is 50% see-through, and 0 is completely transparent.'); ?></td>
             </tr>
         </table>
 </fieldset>
 <fieldset class="adminform long">
-        <legend>Other</legend>
+        <legend><?php echo JText::_('Other'); ?></legend>
         <table>
             <tr>
-                <td>Force to load mootools-core.js</td>
+                <td><?php echo JText::_('Force to load mootools-core.js'); ?></td>
                 <td><?php echo settingsViewYesNo('mootoolscore', $defMootoolscore); ?> </td>
             </tr>
         </table>
