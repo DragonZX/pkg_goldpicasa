@@ -42,56 +42,54 @@ if ($params->get('mootoolscore', '')) {
 
 <form method="post">
     <fieldset class="adminform long">
-        <legend><?php echo JText::_('Theme'); ?></legend>
+        <legend><?php echo JText::_('COM_GOLDPICASA_THEME'); ?></legend>
         <table>
             <tr>
                 <td>
                     <input type="radio" name="gpgsettings[theme]" value="clasic"  <?php if ($params->get('theme', '')==='clasic') echo ' checked="checked" '; ?>>
                 </td>
                 <td>
-                    <?php echo JText::_('Classic'); ?>
+                    <?php echo JText::_('COM_GOLDPICASA_THEME_CLASSIC'); ?>
                 </td>
                 <td></td>
                 <td>
                     <input type="radio" name="gpgsettings[theme]" value="box" <?php if ($params->get('theme', '')==='box') echo ' checked="checked" '; ?>>
                 </td>
                 <td>
-                    <?php echo JText::_('Box'); ?>
+                    <?php echo JText::_('COM_GOLDPICASA_THEME_BOX'); ?>
                 </td>
             </tr>
-
         </table>
-
     </fieldset>
     <br /> <br />
 
     <fieldset class="adminform long">
-        <legend><?php echo JText::_('Box theme settings'); ?></legend>
+        <legend><?php echo JText::_('COM_GOLDPICASA_THEME_BOX_SETTINGS'); ?></legend>
 
         <table>
             <tr>
-                <td><?php echo JText::_('Font size'); ?></td>
+                <td><?php echo JText::_('COM_GOLDPICASA_FONT_SIZE'); ?></td>
                 <td> <input type="text" name="gpgsettings[fontsize]" size="6" placeholder="11px" value="<?php echo $defFontsize; ?>" /> </td>
-                <td><?php echo JText::_('The font-size property sets the size of a font. Examples: 12px, 1.2em, 0.8em'); ?>  </td>
+                <td><?php echo JText::_('COM_GOLDPICASA_FONT_SIZE_DESC'); ?>  </td>
             </tr>
 
             <tr>
-                <td><?php echo JText::_('Font line-height'); ?></td>
+                <td><?php echo JText::_('COM_GOLDPICASA_FONT_LINE_HEIGHT'); ?></td>
                 <td><input type="text" name="gpgsettings[lineheight]" size="6" placeholder="1.1em" value="<?php echo $defLineHeight; ?>" /></td>
-                <td>The line-height property specifies the line height.</td>
+                <td><?php echo JText::_('COM_GOLDPICASA_FONT_LINE_HEIGHT_DESC'); ?></td>
             </tr>
             <tr>
-                <td><?php echo JText::_('Font color'); ?></td>
+                <td><?php echo JText::_('COM_GOLDPICASA_FONT_COLOR'); ?></td>
                 <td><input type="text" name="gpgsettings[fontcolor]" id="examplecolor" class="input-colorpicker" value="<?php echo $defFontColor; ?>" size="10" /></td>
-                <td><?php echo $defFontColor; ?></td>
+                <td><?php echo JText::_('COM_GOLDPICASA_DEFAULT').' '. $defFontColor; ?></td>
             </tr>
             <tr>
-                <td><?php echo JText::_('Overlay color'); ?></td>
+                <td><?php echo JText::_('COM_GOLDPICASA_OVERLAY_COLOR'); ?></td>
                 <td><input type="text" name="gpgsettings[overlaycolor]" id="examplecolor" class="input-colorpicker" value="<?php echo $defOverlayColor; ?>" size="10" /></td>
-                <td>Sets the background color of a overlay.</td>
+                <td><?php echo JText::_('COM_GOLDPICASA_OVERLAY_COLOR_DESC'); ?></td>
             </tr>
             <tr>
-                <td><?php echo JText::_('Overlay opacity-level'); ?></td>
+                <td><?php echo JText::_('COM_GOLDPICASA_OVERLAY_OPACITY_LEVEL'); ?></td>
                 <td><select name="gpgsettings[overlaylevel]">
                     <?php
                     $overlayList=array(1, 0.9 , 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1);
@@ -105,21 +103,21 @@ if ($params->get('mootoolscore', '')) {
                     ?>
                     </select>
                 </td>
-                <td><?php echo JText::_('The opacity-level describes the transparency-level, where 1 is not transperant at all, 0.5 is 50% see-through, and 0 is completely transparent.'); ?></td>
+                <td><?php echo JText::_('COM_GOLDPICASA_OVERLAY_OPACITY_LEVEL_DESC'); ?></td>
             </tr>
         </table>
 </fieldset>
 <fieldset class="adminform long">
-        <legend><?php echo JText::_('Other'); ?></legend>
+        <legend><?php echo JText::_('COM_GOLDPICASA_OTHER'); ?></legend>
         <table>
             <tr>
-                <td><?php echo JText::_('Force to load mootools-core.js'); ?></td>
+                <td><?php echo JText::_('COM_GOLDPICASA_FORCE_MOOTOOLS'); ?></td>
                 <td><?php echo settingsViewYesNo('mootoolscore', $defMootoolscore); ?> </td>
             </tr>
         </table>
     </fieldset>
     <br />
-    <input type="submit" value="Save">
+    <input type="submit" value="<?php echo JText::_('JApply'); ?>">
     <br /> <br />
 </form>
 <?php
@@ -128,12 +126,12 @@ function settingsViewYesNo($name, $default=false, $showDefault=true) {
     $html='';
     $html.='<select name="gpgsettings['.$name.']">';
     if ($showDefault) {
-        $html.='<option value="" >- default -</option>';
+        $html.='<option value="" >'.JText::_('JDefault').'</option>';
     }
     $sel = ($default==='yes') ? ' selected="selected" ' : '';
-    $html.='<option value="yes" '.$sel.'>YES</option>';
+    $html.='<option value="yes" '.$sel.'>'.JText::_('JYes').'</option>';
     $sel = ($default==='no') ? ' selected="selected" ' : '';
-    $html.='<option value="no" '.$sel.'>NO</option>';
+    $html.='<option value="no" '.$sel.'>'.JText::_('JNo').'</option>';
     $html.='</select>';
     return $html;
 }
