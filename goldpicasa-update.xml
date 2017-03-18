@@ -1,0 +1,25 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE updates PUBLIC "-//Joomla! 3.0//DTD template 1.0//EN" "http://help.aunited.ru/dtd/joomla/2.5/update.dtd">
+<updates>
+    <update>
+        <name>livetex</name>
+        <description>Gold Picasa Gallery package installer - component, module and plugins</description>
+        <element>goldpicasa</element>
+        <type>package</type>
+        <version>4.0-alpha</version>
+
+        <infourl title="goldpicasa4 URL">http://help.aunited.ru/goldpicasa/</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/AUnited/goldpicasa/archive/0.1.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>goldpicasa</tag>
+            <tag>google</tag>
+        </tags>
+
+        <maintainer>AUnited Company Limited</maintainer>
+        <maintainerurl>http://aunited.ru</maintainerurl>
+        <targetplatform name="joomla" version="2.5" />
+    </update>
+</updates>

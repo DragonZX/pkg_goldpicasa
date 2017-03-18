@@ -16,4 +16,7 @@
 		<file type="plugin"	id="k2_goldpicasa" group="k2">plg_k2_goldpicasa.zip</file>
 		<file type="module"	id="mod_goldpicasa">mod_goldpicasa.zip</file>
 	</files>
+	<updateservers>
+		<server type="extension" priority="1" name="livetex"><![CDATA[http://help.aunited.ru/goldpicasa/goldpicasa-update.xml]]></server>
+	</updateservers>
 </extension>
